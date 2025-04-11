@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
 <div class="container">
     <h1>Data Inventory Diva</h1>
     <br><br>
-    <a href="view_tambah.php" class="btn btn-primary">Tambah Data Jenis Baru</a>
+    <a href="view_tambah.php" class="btn btn-primary"><i class="fa-solid fa-square-plus"></i> Tambah Data Jenis Baru</a>
     <br><br>
     <table class="table table-success table-danger">
     <thead>
@@ -54,9 +55,10 @@
                     <td><?php echo $result['id_jenis']?></td>
                     <td><?php echo $result['nama_jenis']?></td>
                     <td>
-                    <a href="view_edit.php?id=<?php echo $result['id_jenis'];?>" class="btn btn-info">Edit</a>
+                    <a class="class=btn btn-warning" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"></a>
+                    <a href="view_edit.php?id=<?php echo $result['id_jenis'];?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                     <a href="proses_hapus.php?id=<?php echo $result['id_jenis'];?>"
-                        onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini')" class="btn btn-info">Hapus</a>
+                        onclick="return confirm('Apakah Anda Yakin Ingin Menghapus Data Ini')" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Hapus</a>
                 </tr>
                 <?php
                 $no++;

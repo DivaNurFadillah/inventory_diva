@@ -28,7 +28,7 @@
 </nav>
 <body>
 <div class="container">
-    <h1>Tambah Data Inventory Diva</h1>
+    <h1><i class="fa-solid fa-square-plus"></i> Tambah Data Inventory Diva</h1>
     <br><br>
         <form action="proses_tambah.php" method="POST">
     <div class="mb-3">
